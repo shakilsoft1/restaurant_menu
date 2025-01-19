@@ -23,7 +23,7 @@
                   </Label>
                   <TextField fx:id="su_userName" layoutX="50.0" layoutY="125.0" prefHeight="30.0" prefWidth="220.0" promptText="User Name" />
                   <PasswordField fx:id="su_password" layoutX="50.0" layoutY="171.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" />
-                  <Button fx:id="su_signupBtn" layoutX="50.0" layoutY="302.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@logiinDesign.css" text="Sign Up" />
+                  <Button fx:id="su_signupBtn" layoutX="50.0" layoutY="302.0" mnemonicParsing="false" onAction="#regBtn" prefHeight="30.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@logiinDesign.css" text="Sign Up" />
                   <ComboBox fx:id="su_question" layoutX="50.0" layoutY="214.0" prefHeight="30.0" prefWidth="220.0" promptText="Question" />
                   <PasswordField fx:id="su_answer" layoutX="50.0" layoutY="258.0" prefHeight="30.0" prefWidth="220.0" promptText="Answer" />
                </children>
