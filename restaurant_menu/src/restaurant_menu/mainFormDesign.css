@@ -1,0 +1,80 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 27, 2025, 12:09:56 AM
+    Author     : SHAKIL
+*/
+.header{
+    -fx-background-color: ent(to bottom right, #098c53, #246861);
+}
+.nav-form{
+    -fx-background-color: linear-gradient(to bottom right, #0f6789, #286155);
+}
+.nav-btn{
+    -fx-background-color: transparent;
+    -fx-border-color: #fff;
+    -fx-border-width: .4px;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size:14px;
+}
+.nav-btn:hover{
+    -fx-background-color: #fff;
+    -fx-text-fill: #000;
+}
+
+.signOut-btn{
+    -fx-background-color: transparent;
+    -fx-border-color: #fff;
+    -fx-border-width: .4px;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size:10px;
+}
+.signOut-btn:hover{
+    -fx-background-color: #fff;
+    -fx-text-fill: #000;
+}
+
+.shadow{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5), 5,0,0,0);
+}
+.white-bg{
+    -fx-background-color: #fff;
+    
+}
+.radious{
+    -fx-background-radius: 8px;
+}
+.border{
+    -fx-border-color: #fff;
+    -fx-border-width: 1px;
+}
+.table-view{
+    -fx-background-color:transparent;
+    -fx-padding:0;
+    -fx-border-color:linear-gradient(to bottom right, #0f6789, #286155);
+    -fx-border-radious:5px;
+    -fx-border-width:1.5px;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom right, #0f6789, #286155);
+    -fx-background-insets:0 0 0 0;
+    
+}
+.table-view .column-header, .filter{
+    -fx-background-color:transparent;
+    -fx-size:30px;
+}
+.table-view .column-header .label{
+    -fx-text-fill: #fff;
+}
+.btn{
+    -fx-background-color:linear-gradient(to bottom right, #0f6789, #286155);
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    
+}

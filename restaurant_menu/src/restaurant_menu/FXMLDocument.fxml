@@ -28,7 +28,7 @@
                   <PasswordField fx:id="su_answer" layoutX="50.0" layoutY="258.0" prefHeight="30.0" prefWidth="220.0" promptText="Answer" />
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="326.0" prefHeight="480.0" prefWidth="330.0" styleClass="white-form" stylesheets="@logiinDesign.css">
+            <AnchorPane fx:id="si_loginForm" layoutX="326.0" prefHeight="480.0" prefWidth="330.0" styleClass="white-form" stylesheets="@logiinDesign.css">
                <children>
                   <Label layoutX="32.0" layoutY="126.0" styleClass="head-label" stylesheets="@logiinDesign.css" text="Login Account" textFill="#278d5a">
                      <font>
@@ -37,13 +37,50 @@
                   </Label>
                   <TextField fx:id="si_username" layoutX="32.0" layoutY="172.0" prefHeight="30.0" prefWidth="220.0" promptText="User Name" />
                   <PasswordField fx:id="si_password" layoutX="32.0" layoutY="220.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" />
-                  <Button fx:id="si_loginBtn" layoutX="32.0" layoutY="283.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@logiinDesign.css" text="Login" />
-                  <Hyperlink fx:id="si_forgot" layoutX="31.0" layoutY="253.0" text="Forgot Password?" />
+                  <Button fx:id="si_loginBtn" layoutX="32.0" layoutY="283.0" mnemonicParsing="false" onAction="#loginBtn" prefHeight="30.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@logiinDesign.css" text="Login" />
+                  <Hyperlink fx:id="si_forgot" layoutX="31.0" layoutY="253.0" onAction="#switchForgotPass" text="Forgot Password?" />
                   <Label layoutX="31.0" layoutY="86.0" text="Cafe Shop Management System" textFill="#278d5a">
                      <font>
                         <Font name="Calibri Bold" size="15.0" />
                      </font>
                   </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="question_form" layoutX="332.0" prefHeight="480.0" prefWidth="330.0" styleClass="white-form" stylesheets="@logiinDesign.css" visible="false">
+               <children>
+                  <Label layoutX="31.0" layoutY="115.0" styleClass="head-label" stylesheets="@logiinDesign.css" text="Forgot Password" textFill="#278d5a">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="fp_proceedBtn" layoutX="32.0" layoutY="268.0" mnemonicParsing="false" onAction="#proceedBtn" prefHeight="30.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@logiinDesign.css" text="Proceed" />
+                  <TextField fx:id="fp_username" layoutX="31.0" layoutY="156.0" prefHeight="23.0" prefWidth="220.0" promptText="Answer" />
+                  <Label layoutX="31.0" layoutY="86.0" text="Cafe Shop Management System" textFill="#278d5a">
+                     <font>
+                        <Font name="Calibri Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="fp_question" layoutX="31.0" layoutY="192.0" prefHeight="25.0" prefWidth="220.0" promptText="Question" />
+                  <TextField fx:id="fp_answer" layoutX="31.0" layoutY="227.0" prefHeight="23.0" prefWidth="220.0" promptText="Answer" />
+                  <Button fx:id="fp_back" layoutX="127.0" layoutY="415.0" mnemonicParsing="false" onAction="#backToLoginForm" prefHeight="30.0" prefWidth="70.0" styleClass="login-btn" stylesheets="@logiinDesign.css" text="&lt; Back" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="np_newPassForm" layoutX="326.0" prefHeight="480.0" prefWidth="330.0" styleClass="white-form" stylesheets="@logiinDesign.css" visible="false">
+               <children>
+                  <Label layoutX="32.0" layoutY="126.0" styleClass="head-label" stylesheets="@logiinDesign.css" text="Forgot Password" textFill="#278d5a">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="np_changePassBtn" layoutX="32.0" layoutY="268.0" mnemonicParsing="false" onAction="#changePassBtn" prefHeight="30.0" prefWidth="220.0" styleClass="login-btn" stylesheets="@logiinDesign.css" text="Change Password" />
+                  <Label layoutX="31.0" layoutY="86.0" text="Cafe Shop Management System" textFill="#278d5a">
+                     <font>
+                        <Font name="Calibri Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="np_newPassword" layoutX="31.0" layoutY="190.0" onAction="#changePassBtn" prefHeight="25.0" prefWidth="220.0" promptText="New Password" />
+                  <PasswordField fx:id="np_confirmPassword" layoutX="32.0" layoutY="228.0" onAction="#changePassBtn" prefHeight="25.0" prefWidth="220.0" promptText="Confirm Passwword" />
+                  <Button fx:id="np_back" layoutX="127.0" layoutY="415.0" mnemonicParsing="false" onAction="#backToquestionForm" prefHeight="30.0" prefWidth="70.0" styleClass="login-btn" stylesheets="@logiinDesign.css" text="&lt; Back" />
                </children>
             </AnchorPane>
          </children>
